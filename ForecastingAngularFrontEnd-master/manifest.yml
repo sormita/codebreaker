@@ -1,0 +1,7 @@
+---
+applications :
+- name: "ForecastingAngularFrontEnd"
+  path : "dist/ForecastingAngularFrontEnd"
+  memory : 256M
+  buildpack :
+  - "https://github.com/cloudfoundry/staticfile-buildpack.git"

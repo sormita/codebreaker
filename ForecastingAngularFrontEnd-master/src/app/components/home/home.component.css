@@ -1,0 +1,38 @@
+.container-fluid {
+    height: calc(88vh);
+    margin-top: 30px;
+}
+
+.col {
+    height: 100vh;
+    width: 50%;
+}
+
+.img-div img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .row {
+        padding-top: 80px;
+    }
+    .col {
+        margin-top: 70px;
+        height: 100vh;
+    }
+}
+
+.text {
+    font-family: "PT Sans Narrow";
+    font-size: 2.25vw;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+

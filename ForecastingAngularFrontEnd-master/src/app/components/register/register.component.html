@@ -1,0 +1,92 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2">
+      <div class="card">
+        <div class="card-body">
+          <form class="was-validated">
+            <div class="form-group">
+              <div>
+                <label for="name">Username</label>
+                <input [(ngModel)]="user.Username" type="email" name="username" class="form-control" id="username"
+                  aria-describedby="nameHelp" placeholder="Enter your email" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div>
+                <label for="password">Password</label>
+                <input [(ngModel)]="user.Password" type="password" name="password" class="form-control" id="password"
+                  aria-describedby="passwordHelp" placeholder="Enter your password" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div>
+
+                <label for="entityType">Entity Type</label>
+                <select [(ngModel)]="user.EntityType" name="entityType" class="form-control validate['required']"
+                  id="entityType" aria-describedby="typeHelp" required>
+                  <option value="" selected disabled hidden>Select entity type</option>
+                  <option value="foodSupplier">Food Supplier</option>
+                  <option value="foodConsumer">Food consumer</option>
+                </select>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div id="foodSupplier" style="display: none;" class="style-sub-1" name="stylesub1">
+                <label for="foodSupplier">Food Supplier</label>
+                <select [(ngModel)]="user.foodEntityType" name="foodEntityType" class="form-control"
+                  aria-describedby="supplierTypeHelp" required>
+                  <option value="RationShops">Ration Shops</option>
+                  <option value="Charityhouses">Charity houses</option>
+                  <option value="PrivateDonor">Private Donor</option>
+                </select>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div id="foodConsumer" style="display: none;" class="style-sub-1" name="stylesub1">
+                <label for="foodConsumer">Food Consumer</label>
+                <select [(ngModel)]="user.foodEntityType" name="foodEntityType" class="form-control"
+                  aria-describedby="consumerTypeHelp" required>
+                  <option value="GovernmentHospital">Government Hospital</option>
+                  <option value="QuarantineCenter">Quarantine Center</option>
+                  <option value="NGO">NGO</option>
+                  <option value="MuncipalCorporation">Muncipal Corporation</option>
+                </select>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div>
+                <label for="wardNumber">Ward Number</label>
+                <input [(ngModel)]="user.wardnumber" type="number" name="wardnumber" class="form-control"
+                  id="wardnumber" aria-describedby="wardNumberHelp" placeholder="Enter your ward number" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div>
+                <label for="address">Address</label>
+                <textarea [(ngModel)]="user.address" type="textarea" name="address" class="form-control" id="address"
+                  aria-describedby="addressHelp" placeholder="Enter your address" required></textarea>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div>
+                <label for="pincode">Pincode</label>
+                <input [(ngModel)]="user.pincode" type="text" name="pincode" class="form-control" id="pincode"
+                  aria-describedby="pincodeHelp" placeholder="Enter your pincode" required />
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+            </div>
+          </form>
+          <button class="btn btn-primary" (click)="createUser()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

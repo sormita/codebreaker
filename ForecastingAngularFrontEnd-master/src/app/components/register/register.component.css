@@ -1,0 +1,8 @@
+.container-fluid {
+    height: 100%;
+    background: url("../../../assets/double-bubble.png");
+}
+
+.card {
+    margin: 50px 0;
+}
