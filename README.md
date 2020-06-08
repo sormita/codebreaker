@@ -39,9 +39,6 @@ Map has zoom-in and zoom-out feature with routes.
 
 The application also comes in with Watson Assistant chatbot which can be further extended to identify distress call/donor calls.
 
-Following is a small clip about our thoughts around this application:
-![VideoClip](https://youtu.be/vsEj8YsXHCE)
-
 Built With:
 Angular 8 -> Used to build the front end web application
 .Net Core -> Used to code the serverless functions
